@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/daftar-login-page.css">
+
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Bundle with Propper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
+    -->
+    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript" src="js/validate-register.js"></script>
+
+    <title>Website Kampus Indonesia</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src = "assets/logo.png" width="161px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link menu" href="#">Beranda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle menu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Template</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item menu" href="#">Grid, color, font</a>
+                            <a class="dropdown-item" href="#">Form & Button</a>
+                            <a class="dropdown-item" href="#">Card</a>
+                            <a class="dropdown-item" href="#">Media</a>
+                            <a class="dropdown-item" href="#">Admin Page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Hubungi Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Blog</a>
+                    </li>
+                </ul><hr>
+                <div id="button-container">
+                    <button type="button" id="buttonMasuk" data-toggle="modal" data-target="#loginAcc">Masuk</button>
+                    <button type="button" id="buttonDaftar" data-toggle="modal" data-target="#daftarAcc">Daftar</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- LANDING PAGE CONTENT -->
+    <div id="first_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-xs-12">
+                    <div class="caption_panel">
+                        <h1>Bingung Cari Informasi <br> Seputar Kuliah ?</h1>
+                        <h2>Cari Disini Aja!</h2>
+                        <p>Dapatkan informasi seputar dunia perkuliahan secara<br>
+                            terupdate dari kami melalui aplikasi kampus indonesia</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="image-panel">
+                        <img id ="gambar-container" src="assets/ilustrasi-container.png" width="473px">
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div id="search-container">
+                            <input type="search" id="search-box" placeholder="Informasi Seputar Perkuliahan / Cari Kampus">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <div id="container-info">
+            <figure id="campus-data">
+                <img id = "school1" src="assets/school 1.png">
+                <figcaption>
+                    <h3>1042</h3>
+                    <p>Jumlah Kampus yang <br> Terdata Saat Ini</p>
+                </figcaption>
+            </figure>
+    
+            <figure id="registered-campus" >
+                <img id = "school2" src="assets/school 2.png">
+                    <figcaption>
+                        <h3>113</h3>
+                        <p>Jumlah Kampus yang <br> Sudah Terdaftar di Pintara</p>
+                </figcaption>
+            </figure>
+        </div>
+    
+        <img id = "illustrasi1" src="assets/elipse1.png" width="202px" height="32px">
+        <img id = "illutrasi2" src="assets/elipse1.png" width="178px" height="32px">
+        <img id = "illustrasi3" src="assets/Ellipse 51.png" width="124px" height="124px">
+
+    </div>
+
+    <!-- MODAL Login -->
+    <div id="loginAcc" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg" id="modal-login-box">
+
+        <!-- MODAL LOGIN CONTENT -->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login-form-header">
+                        <h3 class="modal-title"><strong>Selamat Datang Kembali !</strong> <button type="button" class="close" data-dismiss="modal">&times;</button></h3>
+                        <p>Belum punya akun ?  <a href="#" ><strong>Klik disini untuk daftar</strong> </a></p> 
+                    </div>
+                    <form class="socmed-login" action="" method="">
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <a href="#" class="btn socmed-btn google-btn" id="btn-google"><img src="assets/google-logo.png" style="width:18px; height:18px;">   Masuk dengan Google</a>
+                            </div>
+                            <div class="col-md-6 .ml-auto">
+                                <a href="#" class="btn socmed-btn facebook-btn" id="btn-facebook"><img src="assets/facebook_logos.png" style="width:28.5px; height:28.5px;">   Masuk dengan Facebook</a>
+                            </div>
+                        </div>
+                        <div class="separator">
+                            <center><span class="separator-text">Atau</span></center> 
+                        </div>
+                    </form>
+                    <form class="login-container" action="#" method="">
+                        <div class="form-group row">
+                            <input type="email" class="form-control active" name="" id="input-email" placeholder="Alamat Email">
+                        </div>
+                        <div class="form-group row">
+                            <input type="password" class="form-control active" name="" id="input-password" placeholder="Password">
+                            <div class="group">
+                                <i id="show-password" class="fa fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <div class="form-group form-check row">
+                            <input type="checkbox" class="form-check-input" id="loginCheckbox">
+                            <label class="form-check-label col-sm-9" for="loginCheckbox" id="label-loginCheckbox"><strong> Biarkan saya tetap masuk</strong></label>
+                            <a href="" class="lupaPassword col-sm-3"><span><strong> Lupa Password ?</strong></span> </a>
+                        </div>
+                        <center> <input type="submit" class="btn btn-login btn-primary mt-3" id="btn-login" name="submit" value="MASUK"></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="js/show-login.js"></script> -->
+    <!-- END MODAL LOGIN -->
+
+    <!-- MODAL DAFTAR -->
+    <div id="daftarAcc" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+
+            <!-- MODAL DAFTAR CONTENT -->
+            <div class="modal-content modal-content-daftar">
+                <div class="modal-body">
+                    <h3 class="modal-title"><strong>Daftar Sekarang</strong> <button type="button" class="close" data-dismiss="modal">&times;</button></h3>
+                    <p class="text-lead">Sudah punya akun ?  <a href="#"><strong>Klik disini untuk masuk</strong></a><br> 
+                        <strong>Daftar sekarang juga agar dapat informasi - informasi seputar kampus favorit anda. </strong></p>
+                    <form class="form-daftar" action="#" method="" onsubmit="return validateForm(this)">
+                        <!-- Input Email User -->
+                        <div class="form-group row">
+                            <input type="email" class="form-control active" name="" id="emailUser" placeholder="Alamat Email">
+                            <span id="blankMsg" style="color:red; font-size:13px; font-weight:bold;"></span>
+                        </div>
+                        <!-- Create a new password -->
+                        <div class="form-group row">
+                            <input type="password" class="form-control active" name="" id="pswd1" placeholder="Password">
+                            <div class="group">
+                                <i id="show-password-user" class="fa fa-eye-slash"></i>
+                            </div>
+                            <span id="message1" style="color:red; font-size:13px; font-weight:bold;"></span>
+                        </div>
+                        <!-- Confirm password -->
+                        <div class="form-group row">
+                            <input type="password" class="form-control active" name="" id="pswd2" placeholder="Ketik Ulang Password">
+                            <div class="group">
+                                <i id="show-password-user-ulang" class="fa fa-eye-slash"></i>
+                            </div>
+                            <span id="message2" style="color:red; font-size:13px; font-weight:bold;"></span>
+                        </div>
+                        <!-- checkbox confirm -->
+                            <div class="form-group form-check row">
+                                <input type="checkbox" class="form-check-input" id="agreeCheck" name="agree">
+                                <label class="form-check-label" for="agree" id="label-daftarCheckbox"><strong>Dengan membuat akun, Anda telah menyetujui Syarat dan Ketentuan yang berlaku</strong> </label>
+                                <div id="agree-chk" style="visibility:hidden; color:red; font-size:10px; font-weight:bold;">*harap tunjukkan bahwa Anda menyetujui Syarat dan Ketentuan yang berlaku</div>
+                            </div>
+                        <!-- Click to create account -->
+                        <center> <input type="submit" class="btn btn-login btn-primary mt-4" id="btn-daftar" name="submit" value="BUAT AKUN"></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/show.js"></script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- jQuery -->
+    <script>  
+    $('#show-password').click(function() {
+            if ($(this).hasClass('fa-eye-slash')) {
+                $('#input-password').attr('type', 'text');
+                $(this).removeClass('fa-eye-slash');
+                $(this).addClass('fa-eye');
+            } else {
+                $('#input-password').attr('type', 'password');
+                $(this).removeClass('fa-eye');
+                $(this).addClass('fa-eye-slash');
+            }
+        })
+
+        $('#show-password-user').click(function() {
+            if ($(this).hasClass('fa-eye-slash')) {
+                $('#pswd1').attr('type', 'text');
+                $(this).removeClass('fa-eye-slash');
+                $(this).addClass('fa-eye');
+            } else {
+                $('#pswd1').attr('type', 'password');
+                $(this).removeClass('fa-eye');
+                $(this).addClass('fa-eye-slash');
+            }
+        })
+        
+        $('#show-password-user-ulang').click(function() {
+            if ($(this).hasClass('fa-eye-slash')) {
+                $('#pswd2').attr('type', 'text');
+                $(this).removeClass('fa-eye-slash');
+                $(this).addClass('fa-eye');
+            } else {
+                $('#pswd2').attr('type', 'password');
+                $(this).removeClass('fa-eye');
+                $(this).addClass('fa-eye-slash');
+            }
+        })
+    </script>
+</body>
+</html>

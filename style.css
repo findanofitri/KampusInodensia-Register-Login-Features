@@ -1,0 +1,587 @@
+/** Css By Mutiara Annisa **/
+
+*{
+    font-family: Quicksand;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;;
+}
+
+.menu {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 22.5px;
+    color: #002E6D;
+}
+
+#Navigasi {
+    position: relative;
+}
+
+#buttonDaftar{
+    border-radius: 50px;
+    border: none;
+    background: #14375E;
+    height: 33.33px;
+    width: 100px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#button-container { 
+    position: absolute;
+    right: 130px;
+    padding: 10px;
+
+}
+#buttonMasuk {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 18px;
+    width: 56px;
+    height: 23px;
+    color: #002E6D;
+    border: none;
+    margin-right: 30px;
+    background: transparent;
+}
+
+/* LANDING PAGE CONTENT */
+
+#first_section {
+    height: 594.45px;
+    /* margin-top: 6rem; */
+    width: 100%;
+    background-image: url("./assets/Background-Container.png");
+    margin-top: 5%; 
+}
+#first_section .caption_panel{
+    margin-top: 100px;
+}
+
+#first_section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    font-style: normal;
+    color: #002E6D;
+}
+
+#first_section h2 {
+    color: #002E6D;
+    font-size: 36px;
+    line-height: 45px;
+    font-style: normal;
+}
+
+#first_section p {
+    font-family: Monserrat !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 46, 109, 0.75);
+}
+
+#first_section .image-panel img {
+    margin-top: 35px;;
+}
+
+#caption-container {
+    margin-left: 156px;
+    margin-top: -250px;
+    position: relative;
+}
+
+#search-container {
+    width: 100%;
+    text-align: center;
+}
+
+#search-container #search-box{
+    width: 544px;
+    height: 55px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 1px solid #002E6D;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 46, 109, 0.15);
+    border-radius: 50px;
+}
+#search-container #search-box:focus {
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 46, 109, 0.15);
+    border-radius: 50px !important;
+
+}
+#search-container #search-box::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 46, 109, 0.6);
+    text-align: center;
+    opacity: 50%;
+}
+
+#container-info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 352px;
+    top: 549px;
+    width: 736px;
+    height: 140px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#campus-data {
+    padding-left: 5%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+#campus-data figcaption {
+    padding-top: 2%;
+    padding-right: 2%;
+}
+#school1 {
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+#registered-campus {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+#registered-campus figcaption {
+    padding-top: 2%;
+    padding-right: 2%;
+}
+#school2 {
+    padding-right: 10%;
+}
+
+
+#illustrasi1{
+    position: absolute;
+    width: 180px;
+    height: 32px;
+    left: 1250px;
+    top: 136px;
+}
+
+#illutrasi2{
+    position: absolute;
+    width: 202px;
+    height: 32px;
+    left: 60px;
+    top: 452px;
+}
+
+#illustrasi3{
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    left: 1280px;
+    top: 607px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .image-panel img {
+        display: none;
+    }
+    .caption_panel h1 {
+        font-size: 30px !important;
+        padding : 5% 5% 0 5.5% !important;
+        text-align: center;
+
+    }
+
+    .caption_panel h2 {
+        font-size: 25px !important;
+        padding: 0 0 0 5.5% !important;
+        text-align: center;
+    }
+
+    .caption_panel p {
+        font-size: 15px !important;
+        padding-left: 5.5%;
+        text-align: center;
+    }
+    #search-box {
+        width: 80% !important;
+        margin-top: 50px !important;
+    }
+    #search-box::-webkit-input-placeholder {
+        font-size: 13.5px !important;
+        padding-left: 20px;
+    }
+    #illutrasi2 {
+        display: none;
+    }
+
+    #container-info {
+        flex-direction: column;
+        position: absolute;
+        left: 5%;
+        background: transparent;
+        box-shadow: 0 0 0;
+        padding-top: 30%;
+    }
+    #school2 {
+        padding-left: 5%;
+    }
+
+}
+#lihat-kampus-lainnya {
+    width: 334px;
+    height: 50px;
+    left: 190px;
+    top: calc(50% - 53px/2 - 1313.5px);
+    border: 1px solid #002E6D;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1));
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    /* color: #002E6D; */
+}
+.tag-akreditasi-kampus {
+    width: 114px;
+    height: 42px;
+    left: 121px;
+    top: 157px;
+    background-color: #002E6D;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#lihat-detail-kampus {
+    width: 224px;
+    height: 40px;
+    left: 11px;
+    top: 289px;
+    background: #002E6D;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#cari-magang {
+    width: 178px;
+    height: 40px;
+    right: 405px;
+    top: calc(50% - 40px/2 + 7px);
+    background: #002E6D;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#lihat-semua-event-magang {
+    width: 104px;
+    height: 28px;
+    right: 164px;
+    top: calc(50% - 20px/2 + 332px);
+    background: #F4F9FC;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#lihat-semua-kampus {
+    width: 134px;
+    height: 30px;
+    right: 160px;
+    top: calc(50% - 20px/2 - 1627px);
+    background: #F4F9FC;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#artikel-lp {
+    width: 111px;
+    height: 30px;
+    left: 195px;
+    top: calc(50% - 30px/2 + 1073px);
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+}
+#prev  {
+    border:none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: #C4C4C4;
+}
+#next {
+    border:none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: #C4C4C4;
+
+}
+#lihat-semua-artikel {
+    width: 218px;
+    height: 49px;
+    left: calc(50% - 218px/2);
+    top: 3806px;
+    background: #002E6D;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+#btn-terapkan-select{
+    width: 87px;
+    height: 33px;
+    left: 993px;
+    top: 387px;
+    font-size: 15px;
+    text-align: center;
+    background: #002E6D;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+#select-status-kampus{
+    border-radius: 15px;
+}
+#select-provinsi-kampus{
+    border-radius: 15px;
+}
+#select-kota-kampus{
+    border-radius: 15px;
+}
+#select-akreditasi-kampus{
+    border-radius: 15px;
+}
+#select-kategori-jurusan{
+    border-radius: 15px;
+}
+#select-bidmu-jurusan{
+    border-radius: 15px;
+}
+#btn-komparasi-kampus{
+    width: 121.06px;
+    height: 28px;
+    left: 548.33px;
+    top: 1171.68px;
+    background: #E2B327;
+    border-radius: 8.10667px;
+    border:none;
+    color: #ffffff;   
+}
+#cari-jurusan{
+    border-radius: 10px;
+}
+#prev-btngroup{
+    /* width: 30px;
+    height: 30px; */
+    text-align: center;
+    /* background: #E5E5E5; */
+    border-radius: 2.52193px;
+    margin:0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+#page-1 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-2 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-3 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-4 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-5 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-6 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#page-7 {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#next-btngroup {
+    border-radius: 2.52193px;
+    margin:5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropbtn {
+    width: 200px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #94BCF1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+  }
+  h6{
+    color: rgba(20, 55, 94, 0.6);
+    font-size: 20px;
+    line-height: 17px;
+  }
+  form{
+  padding : 10px;}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+    .submit{
+      float: right;
+      margin-bottom: 8px;
+    }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #94BCF1;
+    width: 200px;
+    height: 232px;
+    box-sizing: border-box;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+  }
+
+  #search-artikel{
+    width: 200px;
+    height: 40px;
+    left: 1111px;
+    top: 165px;
+    background: #FFFFFF;
+    border: 1px solid #94BCF1;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  /* form,form .input-icon{width:100%;}
+  form .input-icon{position:relative;}
+
+  .form-input{
+    border:1px solid #eee;
+    border-radius:2px;
+    color:#777;
+    outline:none;
+    margin-top:3px;
+    margin-bottom:6px;
+    font-size:inherit;
+    display:block;
+    padding:8px;
+    padding-left:30px;
+    width:100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  form input+i{
+    position:absolute;
+    right:15px;
+    top:10px;
+    color:#777;
+  }
+  form input:focus{border:1px solid #0099ff;color:#000}
+  form input:focus+i{color:#0099ff;}
+   
+   
+  form>div:last-child{
+    display:inline-block;
+    width:100%;
+  } */
+
+.container-profile-user form .form-control {
+    border: 1px solid #94BCF1;
+}
+.container-ubah-password form .form-control{
+    border: 1px solid #CAE1FF;
+}
+
+.container-form-login .login-with-acc a .btn {
+    border: 1px solid #CAE1FF;
+}
+.container-form-login form .login-acc .form-control{
+    border: 1px solid #94BCF1
+}
+
+.container-pencarian-kampus form .filter-pencarian{
+    display: inline;
+}
+  /* .dropdown-content-artikel {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #94BCF1;
+    width: 200px;
+    height: 180px;
+    box-sizing: border-box;
+    
+  } */
+
+/* LANDING PAGE CONTENT END */
+/** Final Css By Mutiara Annisa **/

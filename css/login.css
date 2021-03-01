@@ -1,0 +1,31 @@
+/* #modal-login-box {
+    width: 780px;
+    height: 452px;
+    border-radius: 10px;
+} */
+
+.modal-content {
+    width: 780px;
+    height: 452px;
+    background: #F3F7FC;
+    border-radius: 10px;
+}
+
+h3 {
+    position: relative;
+    font-family: Quicksand;
+    font-style: normal;
+    color: #14375E;
+}
+
+p {
+    color:#14375E;
+}
+
+#btn-daftar {
+    float: center;
+}
+
+.form-control{
+    height: 50px;
+}
